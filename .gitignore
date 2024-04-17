@@ -1,3 +1,5 @@
 config.py
 venv/
 _pycache_
+login.db
+intership.db
