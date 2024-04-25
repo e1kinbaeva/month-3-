@@ -82,7 +82,7 @@ async def process_phone(message: types.Message, state: FSMContext):
     await UserRegisterState.next()
     await message.answer("Введите ваш возраст:")
 
-group_chat_id = -1002016992729  # Замените на фактический ID вашей группы
+group_chat_id = -1002016992729  
 
 @dp.message_handler(state=UserRegisterState.age)
 async def process_age(message: types.Message, state: FSMContext):
