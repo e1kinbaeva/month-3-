@@ -16,6 +16,7 @@ async def scheduled(wait_for):
         await check_exchange_rates()
 
 
+
 async def check_exchange_rates():
     url = "https://www.nbkr.kg/index.jsp?lang=RUS"
     response = requests.get(url=url)
@@ -50,3 +51,4 @@ async def course(message: types.Message):
 loop = asyncio.get_event_loop()
 loop.create_task(scheduled(60))
 executor.start_polling(dp, skip_updates=True)
+
