@@ -120,7 +120,7 @@ async def process_phone(message: types.Message, state: FSMContext):
     await UserRegisterState.next()
     await message.answer("Введите ваш  адрес:")
     
-group_chat_id = -4143412669 
+group_chat_id = -1002016992729  
 
 @dp.message_handler(state=UserRegisterState.address)
 async def process_age(message: types.Message, state: FSMContext):
